@@ -1,0 +1,68 @@
+.PageContainer {
+    .NavHamSection {
+        padding: 20px 15px;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    .NavSection {
+        display: none;
+    }
+
+    // Responsive Style
+
+    @media only screen and (min-width: 1200px) {
+        .NavHamSection {
+            display: none;
+        }
+
+        .NavSection {
+            display: block;
+            padding: 20px 0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .NavStart {
+                display: flex;
+                cursor: pointer;
+
+                img {
+                    width: 100px;
+                    height: 21px;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: var(--other-font-2);
+                    margin-left: 10px;
+                }
+            }
+
+            .NavEnd {
+                display: flex;
+                cursor: pointer;
+                list-style: none;
+
+                li {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--other-font-2);
+                    margin-right: 20px;
+                    text-transform: uppercase;
+                }
+
+                & :nth-child(1) {
+                    color: var(--other-font-4);
+                }
+
+                & :nth-child(5) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

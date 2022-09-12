@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+    .PageContainer {
+        &.BannerSection {
+            padding: 0px 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid rgb(200, 197, 197);
+            h1 {
+                flex: 50%;
+                font-weight: 400;
+                font-size: 72px;
+                color: var(--other-font-2);
+            }
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .PageContainer {
+        &.BannerSection {
+            padding: 0;
+            padding-bottom: 30px;
+        }
+    }
+}
